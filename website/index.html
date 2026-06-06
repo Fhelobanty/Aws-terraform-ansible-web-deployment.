@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Atoyebi Micheal | DevOps Engineer</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#182018;
+            color:white;
+        }
+
+        .navbar{
+            background:#101510;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:24px;
+            color:#9acd32;
+            font-weight:bold;
+        }
+
+        .hero{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:50px;
+
+            padding:50px 40px;
+
+            background:
+            linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+            url('army.jpg');
+
+            background-size:cover;
+            background-position:center;
+        }
+
+        .hero img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid #9acd32;
+            object-fit:cover;
+        }
+
+        .hero-text{
+            max-width:600px;
+        }
+
+        .hero-text h1{
+            font-size:55px;
+            color:#9acd32;
+            margin-bottom:10px;
+        }
+
+        .hero-text h2{
+            font-size:24px;
+            margin-bottom:15px;
+        }
+
+        .hero-text p{
+            font-size:17px;
+            line-height:1.6;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#556b2f;
+            color:white;
+            padding:12px 28px;
+            text-decoration:none;
+            border-radius:6px;
+            font-size:17px;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+        }
+
+        .section{
+            padding:50px 0;
+        }
+
+        .section h2{
+            text-align:center;
+            font-size:35px;
+            margin-bottom:30px;
+            color:#9acd32;
+        }
+
+        .cards{
+            display:flex;
+            gap:20px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:#273127;
+            width:250px;
+            padding:25px;
+            border-radius:10px;
+            text-align:center;
+        }
+
+        .card h3{
+            color:#9acd32;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            font-size:15px;
+            line-height:1.5;
+        }
+
+        .about{
+            text-align:center;
+            max-width:850px;
+            margin:auto;
+            font-size:18px;
+            line-height:1.7;
+        }
+
+        .footer{
+            background:#101510;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+            font-size:15px;
+        }
+
+        @media(max-width:900px){
+
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .hero-text h1{
+                font-size:42px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="logo">
+            ATOYEBI MICHEAL
+        </div>
+
+    </div>
+
+    <div class="hero">
+
+        <img src="profile.jpg">
+
+        <div class="hero-text">
+
+            <h1>Atoyebi Micheal</h1>
+
+            <h2>DevOps & Cloud Engineer</h2>
+
+            <p>
+                Building cloud infrastructure using Terraform,
+                AWS, Linux, Ansible, and NGINX automation.
+            </p>
+
+            <a href="#about" class="btn">
+                View Project
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="section" id="about">
+
+            <h2>About Me</h2>
+
+            <div class="about">
+
+                <p>
+                    I deployed multiple AWS EC2 servers using Terraform,
+                    automated server configuration using Ansible,
+                    and hosted this portfolio using NGINX on Linux.
+                    This project demonstrates Infrastructure as Code
+                    and Cloud Automation skills.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Skills</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Terraform</h3>
+
+                    <p>
+                        Automating AWS infrastructure deployment.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Ansible</h3>
+
+                    <p>
+                        Automating server setup and configuration.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>AWS Cloud</h3>
+
+                    <p>
+                        Managing EC2 cloud infrastructure services.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        Created by Atoyebi Micheal | DevOps Portfolio
+
+    </div>
+
+</body>
+
+</html>
