@@ -1,0 +1,8 @@
+Internet
+    |
+    |
+Ansible Control Node
+    |
+ -------------------
+ |        |        |
+Web1    Web2     Web3
