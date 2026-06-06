@@ -1,0 +1,28 @@
+---
+- name: Install NGINX on webservers
+  hosts: webservers
+  become: yes
+
+  tasks:
+
+    - name: Install amazon-linux-extras
+      yum:
+        name: amazon-linux-extras
+        state: present
+
+    - name: Enable nginx repository
+      shell: amazon-linux-extras enable nginx1
+
+    - name: Clean yum cache
+      shell: yum clean metadata
+
+    - name: Install nginx
+      yum:
+        name: nginx
+        state: present
+
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
